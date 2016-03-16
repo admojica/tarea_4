@@ -18,14 +18,10 @@ public final class Reporte
     // Metodo constructor de la clase
     public Reporte()
     {
-        
         reporte = " <table style='width:400px;border:1px solid black;'><tr><td></td><td>VS</td><td>S</td><td>M</td><td>L</td><td>VL</td></tr>";
         generarReporte("src/main/java/data/loc-method.txt", "LOC/Method");
         generarReporte("src/main/java/data/pgs-chapter.txt", "Pgs/Chapter");          
         reporte += "</table>";
-        
-        
-        
     }
     
     // Metodo para retornar el resultado del reporte
