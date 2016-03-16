@@ -19,11 +19,13 @@ public final class Reporte
     public Reporte()
     {
         
-        reporte = " <table style='width:400px;border:1px solid black;'><tr><td>Beta 0</td><td>Beta 1</td><td>rxy</td><td>r2</td><td>Yk</td></tr>";
-        System.out.println(" | VS | S | M | L | VL");
+        reporte = " <table style='width:400px;border:1px solid black;'><tr><td></td><td>VS</td><td>S</td><td>M</td><td>L</td><td>VL</td></tr>";
         generarReporte("src/main/java/data/loc-method.txt", "LOC/Method");
-        System.out.println("-------------");
-        generarReporte("src/main/java/data/pgs-chapter.txt", "Pgs/Chapter");  
+        generarReporte("src/main/java/data/pgs-chapter.txt", "Pgs/Chapter");          
+        reporte += "</table>";
+        
+        
+        
     }
     
     // Metodo para retornar el resultado del reporte
@@ -57,6 +59,6 @@ public final class Reporte
             String impresion = formato.format(lista.get(i));
             lista_nueva.add(i, impresion);            
         }
-        System.out.println(titulo + " | " + lista_nueva.get(0) + " | " + lista_nueva.get(1)+ " | " + lista_nueva.get(2)+ " | " + lista_nueva.get(3)+ " | " + lista_nueva.get(4));
+        reporte += "<tr><td>" + titulo + "</td><td>" + lista_nueva.get(0) + "</td><td>" + lista_nueva.get(1) + "</td><td>" + lista_nueva.get(2) + "</td><td>" + lista_nueva.get(3) + "</td><td>" + lista_nueva.get(4) + "</td></tr>";       
     }
 }
