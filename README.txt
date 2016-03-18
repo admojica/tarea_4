@@ -14,12 +14,14 @@ Repositorio para la tarea 4 de Conceptos avanzados de Ingeniería de Software
 
 # Creación y despliegue de la aplicación en Heroku
 
-1. Para desplegar la aplicación en Heroku escriba el siguiente comando en la carpeta que había quedado ubicado: heroku create.
-2. Con este comando se crea una aplicación con un nombre aleatorio en su cuenta de Heroku.
-3. Ahora despliegue el código: git push heroku master
-4. Asegúrese de que al menos se esta ejecutando una instancia para poder correr el programa a través del siguiente comando: heroku ps:scale web=1
-5. Una vez comprobado el paso anterior digite: heroku open
-6. Esto abrirá automáticamente una ventana en su navegador con los resultados del programa.
+1. Ingrese a heroku digitando en la consola o en el terminal el comando: heroku login.
+2. Este le pedirá su usuario y contraseña de heroku, digítelos para poder continuar.
+3. Para desplegar la aplicación en Heroku escriba el siguiente comando en la carpeta que había quedado ubicado: heroku create.
+4. Con este comando se crea una aplicación con un nombre aleatorio en su cuenta de Heroku.
+5. Ahora despliegue el código: git push heroku master
+6. Asegúrese de que al menos se esta ejecutando una instancia para poder correr el programa a través del siguiente comando: heroku ps:scale web=1
+7. Una vez comprobado el paso anterior digite: heroku open
+8. Esto abrirá automáticamente una ventana en su navegador con los resultados del programa.
 
 # Ejecutar el programa localmente
 

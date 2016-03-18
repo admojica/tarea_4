@@ -15,7 +15,7 @@ public final class Reporte
     AbrirDatos abrir_datos = new AbrirDatos();
     Estadistica estadistica = new Estadistica();
     String reporte;
-    // Metodo constructor de la clase
+    /* Metodo constructor de la clase */
     public Reporte()
     {
         reporte = " <table style='width:400px;border:1px solid black;'><tr><td></td><td>VS</td><td>S</td><td>M</td><td>L</td><td>VL</td></tr>";
@@ -24,13 +24,13 @@ public final class Reporte
         reporte += "</table>";
     }
     
-    // Metodo para retornar el resultado del reporte
+    /* Metodo para retornar el resultado del reporte */
     public String getReporte()
     {
         return this.reporte;
     }
     
-    // Metodo de set-up para obtener el reporte
+    /* Metodo de set-up para obtener el reporte */
     public void generarReporte(String ruta, String titulo)
     {        
         LinkedList loc_method = abrir_datos.llenarLista(ruta);
@@ -44,7 +44,7 @@ public final class Reporte
         organizarReporte(rangos, titulo);
     }
     
-    // Metodo para organizar la impresión del reporte
+    /* Metodo para organizar la impresión del reporte */
     public void organizarReporte(LinkedList lista, String titulo)
     {
         LinkedList lista_nueva = new LinkedList();

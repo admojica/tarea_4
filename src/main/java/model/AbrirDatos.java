@@ -16,7 +16,7 @@ import java.util.LinkedList;
 
 public class AbrirDatos 
 {    
-    // Metodo que lee el archivo .txt y llena una lista
+    /* Metodo que lee el archivo .txt y llena una lista */
     public LinkedList llenarLista(String ruta)
     {
         LinkedList lista = new LinkedList();

@@ -10,7 +10,7 @@ import java.util.LinkedList;
 
 public class Estadistica 
 {
-    // Metodo que determina el logaritmo neperiano de una lista ligada
+    /* Metodo que determina el logaritmo neperiano de una lista ligada */
     public LinkedList logaritmoNeperiano(LinkedList lista)
     {
         for(int i = 0; i < lista.size(); i++)
@@ -21,7 +21,7 @@ public class Estadistica
         return lista;
     }
     
-    // Metodo que obtiene el promedio de una lista
+    /* Metodo que obtiene el promedio de una lista */
     public Double obtenerPromedio(LinkedList lista)
     {
         Double promedio = 0.0;
@@ -33,7 +33,7 @@ public class Estadistica
         return promedio;
     }
     
-    // Metodo para obtener el logaritmo menos el promedio elevado al cuadrado
+    /* Metodo para obtener el logaritmo menos el promedio elevado al cuadrado */
     public LinkedList obtenerLogartimoMenosPromedio(LinkedList lista, Double promedio)
     {
         LinkedList lista_nueva = new LinkedList();
@@ -45,7 +45,7 @@ public class Estadistica
         return lista_nueva;
     }
     
-    // Metodo para obtener la varianza
+    /* Metodo para obtener la varianza */
     public Double obtenerVarianza(LinkedList lista)
     {
         Double varianza = 0.0;
@@ -57,14 +57,14 @@ public class Estadistica
         return varianza;
     }
     
-    // Metodo para obtener la desviacion estandar
+    /* Metodo para obtener la desviacion estandar */
     public Double obtenerDesviacionEstandar(Double varianza)
     {
         Double desviacion_estandar = Math.sqrt(varianza);        
         return desviacion_estandar;        
     }
     
-    // Metodo para obtener los rangos logaritmicos a partir de la desviación estandar
+    /* Metodo para obtener los rangos logaritmicos a partir de la desviación estandar */
     public LinkedList obtenerRangosLogaritmicos(Double promedio, Double desviacion_estandar)
     {
         LinkedList lista = new LinkedList();
@@ -78,7 +78,7 @@ public class Estadistica
         return lista;
     }
     
-    // Metodo para obtener el antilogaritmo de una lista dada
+    /* Metodo para obtener el antilogaritmo de una lista dada */
     public LinkedList obtenerAntilogaritmo(LinkedList lista)
     {
         LinkedList lista_nueva = new LinkedList();
